@@ -1,0 +1,19 @@
+.ct-breadcrumbs {
+	color: var(--color);
+
+	> span {
+		display: inline-flex;
+		align-items: center;
+		vertical-align: middle;
+
+		.separator {
+			margin: 0 8px;
+		}
+	}
+
+	.ct-home-icon {
+		position: relative;
+		top: -0.15em;
+		vertical-align: middle;
+	}
+}

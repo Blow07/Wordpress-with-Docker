@@ -1,0 +1,223 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./.dev/assets/design-styles/modern/css/style-modern-editor.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+
+:root {
+    --go--max-width: 38rem;
+    --go--max-width--alignwide: 90rem;
+    --go--viewport-basis: 950;
+    --go--spacing--header: 17;
+    --go--spacing--horizontal: 40;
+    --go--spacing--paragraph: 13;
+    --go--color--text: hsl(0, 0%, 0%);
+    --go--font-family: "Fira Code", mono, sans-serif;
+    --go--font-size--small: 90%;
+    --go--font-size: .85rem;
+    --go--line-height: 2.25;
+    --go--type-ratio: 1.3;
+    --go-heading--button-spacing: 1.75rem;
+    --go-heading--color--text: hsl(0, 0%, 0%);
+    --go-heading--font-family: "Heebo", sans-serif;
+    --go-heading--font-weight: 800;
+    --go-heading--letter-spacing: -0.02rem;
+    --go-heading--line-height: 1.2;
+    --go-heading--margin-bottom: 1rem;
+    --go-caption--color--text: hsl(0, 0%, 34%);
+    --go-caption--font-size: .75rem;
+    --go-caption--text-align--rtl: right;
+    --go-caption--text-align: left;
+    --go--hyperlink--color--text: var(--go-heading--color--text);
+    --go--hyperlink-interactive--color--text: var(--go--color--primary);
+    --go-quote--border-width: .45rem;
+    --go-pullquote--font-family: serif;
+    --go-outline--color--text: hsl(0, 0%, 0%);
+    --go-selection--color--background: hsl(0, 0%, 0%);
+    --go-button--border-radius: 0;
+    --go-button--font-size: .75rem;
+    --go-button--font-weight: 600;
+    --go-button--letter-spacing: 3px;
+    --go-button--padding--x: 2rem;
+    --go-button--padding--y: 1.8rem;
+    --go-button--text-transform: uppercase;
+    --go-button-interactive--color--background: var(--go-heading--color--text);
+    --go-label--font-size: var(--go-navigation--font-size);
+    --go-label--font-weight: var(--go-navigation--font-weight, 400);
+    --go-label--letter-spacing: var(--go-navigation--letter-spacing, normal);
+    --go-label--margin-bottom: .75rem;
+    --go-label--text-transform: uppercase;
+    --go-input--border: var(--go-input--border-width, 2px) var(--go-input--border-style, solid) var(--go-input--border-color, var(--go-heading--color--text));
+    --go-input--color--text: var(--go--color--text);
+    --go-input--font-size: 1rem;
+    --go-input--margin-bottom: 2.25rem;
+    --go-input--padding--x: 1.25rem;
+    --go-input--padding--y: 1.25rem;
+    --go-site-title--color--text: var(--go-heading--color--text);
+    --go-site-title--font-size: 1.1rem;
+    --go-site-title--font-family: var(--go-navigation--font-family);
+    --go-site-title--text-transform: uppercase;
+    --go-site-title--letter-spacing: 3px;
+    --go-site-description--color--text: var(--go-heading--color--text);
+    --go-site-description--opacity: 1;
+    --go-site-description--font-size: .75rem;
+    --go-site-description--font-family: "Montserrat", sans-serif;
+    --go-site-description--font-weight: 400;
+    --go-site-description--letter-spacing: 0;
+    --go-navigation--color--text: var(--go-heading--color--text);
+    --go-navigation--font-family: "Montserrat", sans-serif;
+    --go-navigation--font-size: .8rem;
+    --go-navigation-mobile--font-size: 1rem;
+    --go-navigation--font-weight: 700;
+    --go-navigation--text-transform: uppercase;
+    --go-navigation--letter-spacing: 3px;
+    --go-search-button--color--text-interactive: var(--go-heading--color--text);
+    --go-search-button--color--background: var(--go--color--primary);
+    --go-search-button--color--background-interactive: var(--go-heading--color--text);
+    --go-social--size: 1.5rem;
+    --go-social--padding: .75rem;
+    --go-meta--color--text: var(--go-heading--color--text);
+    --wp-block-coblocks-features--heading--margin-bottom: 1rem;
+    --wp-block-coblocks-features--icon--margin-bottom: 1.75rem;
+    --wp-block-coblocks-food-item--heading--font-weight: 700;
+}
+
+@media only screen and (min-width: 960px) {
+    :root {
+        --go-site-title--font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 782px) {
+    :root {
+        --go-social--size: 2rem;
+        --go-social--padding: 1rem;
+    }
+}
+
+/*! Modern: CoBlocks Carousel */
+
+.wp-block-coblocks-gallery-carousel .flickity-button {
+    background-color: transparent !important;
+    border: 2px solid var(--go--color--white) !important;
+    border-radius: 0;
+}
+
+.wp-block-coblocks-gallery-carousel .flickity-button::after {
+    background-image: url(../../../dist/images/design-styles/modern/carousel-arrow.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: "";
+    display: inline-block;
+    height: 8px;
+    left: 13px;
+    position: absolute;
+    top: calc(50% - 4px);
+    transition: transform 200ms cubic-bezier(.7, 0, .3, 1);
+    width: 48px;
+}
+
+.wp-block-coblocks-gallery-carousel .flickity-button.next,
+.wp-block-coblocks-gallery-carousel .flickity-button.previous {
+    height: 37px;
+    width: 48px;
+}
+
+.wp-block-coblocks-gallery-carousel .flickity-button.next::after,
+.wp-block-coblocks-gallery-carousel .flickity-button.previous::after {
+    height: 8px;
+    width: 48px;
+}
+
+.wp-block-coblocks-gallery-carousel .flickity-button.previous {
+    left: 18px;
+}
+
+@media only screen and (min-width: 782px) {
+    .wp-block-coblocks-gallery-carousel .flickity-button.previous {
+        left: 25px;
+    }
+}
+
+.wp-block-coblocks-gallery-carousel .flickity-button.previous::after {
+    background-color: transparent;
+    left: 13px;
+    -webkit-mask-image: unset;
+    right: auto;
+    transform: rotate(180deg);
+}
+
+.wp-block-coblocks-gallery-carousel .flickity-button.previous:active::after,
+.wp-block-coblocks-gallery-carousel .flickity-button.previous:focus::after,
+.wp-block-coblocks-gallery-carousel .flickity-button.previous:hover::after {
+    transform: translateX(-29px) rotate(180deg);
+}
+
+.wp-block-coblocks-gallery-carousel .flickity-button.next {
+    right: 18px;
+}
+
+@media only screen and (min-width: 782px) {
+    .wp-block-coblocks-gallery-carousel .flickity-button.next {
+        right: 25px;
+    }
+}
+
+.wp-block-coblocks-gallery-carousel .flickity-button.next::after {
+    background-color: transparent;
+    left: auto;
+    -webkit-mask-image: unset;
+    right: 13px;
+}
+
+.wp-block-coblocks-gallery-carousel .flickity-button.next:active::after,
+.wp-block-coblocks-gallery-carousel .flickity-button.next:focus::after,
+.wp-block-coblocks-gallery-carousel .flickity-button.next:hover::after {
+    transform: translateX(29px);
+}
+
+.has-aligned-cells .flickity-button::before {
+    background: var(--go-button--color--background, var(--go--color--primary));
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/*! Modern: Button */
+
+.wp-block-button__link, .wp-block-search__button {
+    overflow: hidden;
+}
+
+.wp-block-button__link::after, .wp-block-search__button::after {
+    background-color: currentColor;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 10px;
+    left: var(--go-button--padding--x);
+    position: absolute;
+    right: var(--go-button--padding--x);
+    transform: translateY(100%);
+    transition: transform 200ms cubic-bezier(.7, 0, .3, 1);
+}
+
+.wp-block-button__link:focus::before, .wp-block-button__link:hover::before,
+.wp-block-search__button:focus::before, .wp-block-search__button:hover::before {
+    opacity: 1;
+}
+
+.wp-block-button__link:focus::after, .wp-block-button__link:hover::after,
+.wp-block-search__button:focus::after, .wp-block-search__button:hover::after {
+    transform: translateY(0);
+}
+
+.single_add_to_cart_button::after {
+    display: none !important;
+}

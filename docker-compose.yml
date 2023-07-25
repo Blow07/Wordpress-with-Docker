@@ -1,0 +1,53 @@
+version: '3'
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: some-mariadb
+    volumes:
+      - /badowordpress:/var/lib/mysql
+    environment:
+      - MARIADB_USER=boye-user
+      - MARIADB_PASSWORD=rootjunior
+      - MARIADB_ROOT_PASSWORD=root
+      - MARIADB_DATABASE=Dockerbase
+    networks:
+      - sae23_boye
+
+  wordpress:
+    image: wordpress
+    container_name: some-wordpress
+    volumes:
+      - /htmlwordpress:/var/www/html
+    ports:
+      - 80:80
+    environment:
+      - WORDPRESS_DB_HOST=some-mariadb
+      - WORDPRESS_DB_USER=boye-user
+      - WORDPRESS_DB_PASSWORD=rootjunior
+      - WORDPRESS_DB_NAME=Dockerbase
+    networks:
+      - sae23_boye
+
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: phpmyadmin
+    ports:
+      - 9000:80
+    environment:
+      - PMA_HOST=some-mariadb
+    networks:
+      - sae23_boye
+
+  portfolio:
+    build:
+      context: ./rep_portfolio
+      dockerfile: Dockerfile
+    image: img_portfolio
+    container_name: portfolio_container
+    ports:
+      - 82:80
+    networks:
+      - sae23_boye
+
+networks:
+  sae23_boye:
